@@ -19,6 +19,10 @@ app {
     align-items: center;
 }
 
+.bg-top {
+    color: white;
+}
+
 .main {
     flex: 1;
 }
@@ -159,18 +163,14 @@ body {
     z-index: 1000;
     font-family: 'Bangers', cursive;
     text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
-    -moz-transform: skew(0, -6.7deg);
-    -ms-transform: skew(0, -6.7deg);
-    -webkit-transform: skew(0, -6.7deg);
-    transform: skew(0, -6.7deg);
-    -moz-transition-property: font-size;
-    -o-transition-property: font-size;
-    -webkit-transition-property: font-size;
-    transition-property: font-size;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -moz-transform: skew(0, -6.8deg);
+    -ms-transform: skew(0, -6.8deg);
+    -webkit-transform: skew(0, -6.8deg);
+    transform: skew(0, -6.8deg);
+    -moz-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
 }
 
 @media screen and (max-width: 50em) {
@@ -194,4 +194,8 @@ body {
     background-color: #5f7276;
     border-radius: 0.25rem;
     box-shadow: 5px 4px 4px 0px #3f4246;
+}
+
+.td3 {
+    padding-top: 10rem;
 }

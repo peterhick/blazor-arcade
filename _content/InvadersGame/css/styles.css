@@ -28,16 +28,27 @@
     display: inline-block;
 }
 
-.intro-scorelist {
-    padding: 25px 0;
+.intro-inline {
+    display: inline-block;
+    padding: 0 10px;
+    width: 200px;
 }
 
-.intro-start {
+.intro-scorelist {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.intro-start, .intro-end {
     color: yellowgreen;
     text-align: center;
+    width: 100%;
+    padding: 0 0 30px 0;
+}
+
+.intro-end {
     position: absolute;
     bottom: 0;
-    width: 100%;
     padding: 20px 0;
 }
 
@@ -53,8 +64,6 @@
 }
 
 .invaders-game {
-    /*width: 100%;*/
-    /*height: 600px;*/
     background-color: black;
     position: relative;
     display: inline-block;
@@ -265,4 +274,129 @@
     /*top: 100px;*/
     display: inline-block;
     color: dodgerblue;
+}
+
+/*
+    Intro slider.
+*/
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    width: 200%;
+    height: 100%;
+    -webkit-animation: slide 10s infinite;
+    -moz-animation: slide 10s infinite;
+    animation: slide 10s infinite;
+    /*-webkit-animation-iteration-count: 2,2,2,2; /* Chrome, Safari, Opera */
+    /*animation-iteration-count: 2,2,2,2;*/
+}
+
+.slider-content {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+@-webkit-keyframes slide {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    12% {
+        margin-left: 0%;
+    }
+
+    24% {
+        margin-left: 0%;
+    }
+
+    36% {
+        margin-left: 0%;
+    }
+
+    48% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -100%;
+    }
+
+    72% {
+        margin-left: -100%;
+    }
+
+    84% {
+        margin-left: -100%;
+    }
+}
+
+@-moz-keyframes slide {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    12% {
+        margin-left: 0%;
+    }
+
+    24% {
+        margin-left: 0%;
+    }
+
+    36% {
+        margin-left: 0%;
+    }
+
+    48% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -100%;
+    }
+
+    72% {
+        margin-left: -100%;
+    }
+
+    84% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes slide {
+    0%,100% {
+        margin-left: 0%;
+    }
+
+    12% {
+        margin-left: 0%;
+    }
+
+    24% {
+        margin-left: 0%;
+    }
+
+    36% {
+        margin-left: 0%;
+    }
+
+    48% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -100%;
+    }
+
+    72% {
+        margin-left: -100%;
+    }
+
+    84% {
+        margin-left: -100%;
+    }
 }
